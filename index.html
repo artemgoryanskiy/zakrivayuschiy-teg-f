@@ -9,10 +9,63 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header content-wide">
+      <h1 class="header__logo">
+        <span class="header__logo_title">&lt;/HTML&gt;</span>
+        <span class="header__logo_subtitle">
+          закрывающий тег
+        </span>
+      </h1>
+    </header>
+    <main class="content-wide">
+      <ul class="card-list">
+        <li class="card__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <img src="./images/prototype.png" alt="" class="card__image">
+            <div class="card__desc">
+              <p class="card__desc_text">
+                Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__desc_text">
+                Место для ваших воспоминаний о начале обучения.
+              </p>
+              <button class="card__icon-button">
+                <img src="./images/heart in paths.svg" alt="" class="like-icon">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </article>
+
+        </li>
+        <!-- <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li>
+        <li class="card-item"></li> -->
+      </ul>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

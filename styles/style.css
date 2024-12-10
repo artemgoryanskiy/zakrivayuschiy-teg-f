@@ -10,7 +10,99 @@
 
 */
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font);
+  }
+}
+
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 100px;
+}
+
+.content-wide {
+  inline-size: var(--content-inline-size);
+}
+
+.header {
+  margin-block-end: 100px;
+  border: 2px solid #000;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--accent-font), system-ui;
+  padding-block: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
+}
+
+.header__logo span {
+  display: block;
+}
+
+
+.header__logo_title {
+  font-size: var(--logo-title-size);
+}
+
+.header__logo_subtitle {
+  font-size: var(--logo-subtitle-size);
+  text-transform: uppercase;
+}
+
+.card {
+  border: 2px solid #000;
+}
+.card__title {
+  font-size: inherit;
+  font-weight: var(--title-font-weight);
+  padding-inline: 10px;
+  line-height: 170%;
+}
+.card__image {
+  block-size: 100%;
+  inline-size: 100%
+}
+
+.card__desc {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__desc_text {
+  line-height: 120%;
+}
+
+.card__icon-button {
+  border: none;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  align-self: end;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  inline-size: 179px;
+}
+
+.button__text {
+  padding-block: 10px;
+  padding-inline: 35px;
+  border: 2px solid #000;
+}
+
+@media (width <= 375px) {
+  .content-wide {
+    inline-size: 100%;
+  }
 }
