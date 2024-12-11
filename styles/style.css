@@ -10,12 +10,6 @@
 
 */
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-font);
-  }
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -24,6 +18,13 @@
   flex-direction: column;
   align-items: center;
   padding-block: 100px;
+  font-family: sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font);
+  }
 }
 
 .content-wide {
@@ -80,6 +81,7 @@
 }
 
 .image-box__image {
+  display: block;
   block-size: 100%;
   inline-size: 100%;
 }
@@ -190,4 +192,35 @@
     inline-size: 100%;
   }
 
+  .card-list {
+    row-gap: 48px;
+  }
+
+  .card__title {
+    line-height: normal;
+    padding-block: 4px;
+  }
+
+  .card__desc {
+    padding-block: 29px;
+  }
+
+  .card__desc_text {
+    line-height: 117%;
+  }
+
+  .image-box__text {
+    top: 25px;
+    right: 11px;
+  }
+
+  .dialog-button {
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .dialog-button svg {
+    width: 28px;
+    height: 28px;
+  }
 }
