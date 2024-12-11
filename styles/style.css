@@ -16,7 +16,6 @@
   }
 }
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -49,7 +48,6 @@
   display: block;
 }
 
-
 .header__logo_title {
   font-size: var(--logo-title-size);
 }
@@ -74,9 +72,36 @@
   line-height: 170%;
 }
 
-.card__image {
+.image-box {
+  position: relative;
+}
+
+.image-box__image {
   block-size: 100%;
-  inline-size: 100%
+  inline-size: 100%;
+}
+
+.image-box__text {
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  font-family: var(--accent-font), system-ui;
+  font-size: 14px;
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  text-shadow: -1px -1px var(--text-stroke-color),
+    1px 1px var(--text-stroke-color);
+}
+
+@supports (
+  (text-stroke: 1px var(--text-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--text-stroke-color))
+) {
+  .image-box__text {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
+  }
 }
 
 .card__desc {
@@ -90,7 +115,6 @@
 .card__desc_text {
   line-height: 120%;
 }
-
 
 .button {
   padding: 0;
@@ -121,7 +145,6 @@
   padding-inline-start: 19px;
   padding-inline-end: 21px;
 }
-
 
 @media (width <= 375px) {
   .content-wide {
