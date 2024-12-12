@@ -61,7 +61,7 @@
 .card-list {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 49px;
   margin-block-end: 49px;
 }
 
@@ -73,7 +73,7 @@
   font-size: inherit;
   font-weight: var(--title-font-weight);
   padding-inline: 10px;
-  line-height: 174%;
+  line-height: 171%;
 }
 
 .image-box {
@@ -109,7 +109,7 @@
 }
 
 .card__desc {
-  padding-block: 24px;
+  padding-block: 27px;
   padding-inline: 25px;
   display: flex;
   flex-direction: column;
@@ -212,6 +212,11 @@
   .image-box__text {
     top: 25px;
     right: 11px;
+  }
+
+  .dialog-save[open] {
+    inline-size: 340px;
+    padding: 30px 40px;
   }
 
   .dialog-button {
