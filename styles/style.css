@@ -248,6 +248,46 @@ button,
   transform: scaleX(1);
 }
 
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  fill: var(--main-content-background);
+  transition: fill;
+  transition-delay: .03s;
+
+}
+
+.main-body {
+  fill: var(--main-content-background);
+  transition: fill .3s;
+}
+
+.card__icon-button:hover {
+  .core {
+    fill: var(--contour-color);
+    transition: fill .3s;
+  }
+  .main-body {
+    fill: var(--contour-color);
+    transition: fill .3s .05s;
+  }
+    
+}
+
+.card__icon-button:active {
+  .core {
+    fill: var(--sparks-color);
+    transition: fill .3s;
+  }
+  .main-body {
+    fill: var(--sparks-color);
+    transition: fill .3s .05s;
+  }
+    
+}
+
 .close-button {
   justify-content: center;
   padding-block: 10px;
