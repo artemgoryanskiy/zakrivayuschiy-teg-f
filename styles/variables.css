@@ -6,8 +6,23 @@
   --card-font-weight: 400;
   --content-inline-size: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
   --logo-title-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
-
   --logo-subtitle-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
-  --text-stroke-color: rgb(255 255 255 /.5);
-  /* --dialog-inline-size: clamp(21.313rem, 21.047rem + 1.13vw, 22.063rem); */
+  --main-text-color: rgb(0 0 0);
+  --text-stroke-color: rgb(255 255 255 /0.5);
+  --page-background: repeating-linear-gradient(
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+
+  --main-content-background: rgb(255 355 255);
 }
