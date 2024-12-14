@@ -11,23 +11,29 @@
   --main-text-color: rgb(0 0 0);
   --text-stroke-color: rgb(255 255 255 /0.5);
   --page-background: repeating-linear-gradient(
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
+      rgb(211 211 211) 0,
+      rgb(211 211 211) 2px,
+      /* transparent 2px,
+      transparent 4px */
+      rgb(211 211 211 / 0) 2px,
+      rgba(211 211 211 / 0) 4px
     ),
     repeating-linear-gradient(
       to right,
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
+      rgb(211 211 211) 0,
+      rgb(211 211 211) 2px,
+      /* transparent 2px,
+      transparent 4px */
+      rgb(211 211 211 / 0) 2px,
+      rgba(211 211 211 / 0) 4px
     ),
-    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    repeating-linear-gradient(
+      rgb(231 231 231) 0.01%,
+      rgb(26 26 26) 100%
+    );
 
   --main-content-background: rgb(255 355 255);
 
   --contour-color: rgb(0 0 0);
   --sparks-color: rgb(255 0 0);
-  /* --core-color: rgb(255 255 255); */
 }

@@ -198,6 +198,7 @@ button,
 .dialog-button {
   display: flex;
   justify-self: center;
+  margin: auto; /*Для Safari*/
   align-items: center;
   gap: 8px;
   padding-inline-start: 19px;
