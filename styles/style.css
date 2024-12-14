@@ -267,7 +267,7 @@ button,
   transition: fill .1s;
 }
 
-.card__icon-button:hover {
+.like-icon:hover {
   .core {
     fill: var(--contour-color);
     transition: fill 0.3s;
