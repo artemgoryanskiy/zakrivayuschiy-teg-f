@@ -12,17 +12,19 @@
     <link
       rel="icon"
       type="image/png"
-      href="/images/favicon-96x96.png"
+      href="/images/favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./images/apple-touch-icon.png"
+      href="/images/favicon/apple-touch-icon.png"
     />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
   </head>
+
   <body class="page">
     <header class="header content-wide">
       <h1 class="header__logo">
@@ -40,11 +42,12 @@
             </h2>
             <div class="image-box">
               <img
-                src="./images/inspiration.jpg"
-                alt=""
+                src="./images/main-content-images/inspiration.jpg"
+                srcset="./images/main-content-images/inspiration.avif"
+                alt=" Мужчина в костюме и шляпе стоит на холме, наслаждаясь видом окружающего пейзажа"
                 class="image-box__image inspiration"
               />
-              <span class="image-box__text"> &lt;inspiration&gt; </span>
+              <span class="image-box__text">&lt;inspiration&gt;</span>
             </div>
             <div class="card__desc">
               <p class="card__desc_text">
@@ -111,8 +114,9 @@
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="image-box">
               <img
-                src="./images/basic.jpg"
-                alt=""
+                src="./images/main-content-images/basic.jpg"
+                srcset="./images/main-content-images/basic.avif"
+                alt="Человек сосредоточился на наборе кода на ноутбуке, демонстрируя цифровое рабочее пространство, заполненное программным текстом."
                 class="image-box__image basic"
               />
               <span class="image-box__text"> &lt;basic&gt; </span>
@@ -184,8 +188,9 @@
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="image-box">
               <img
-                src="./images/satisfaction.jpg"
-                alt=""
+                src="./images/main-content-images/satisfaction.jpg"
+                srcset="./images/main-content-images/satisfaction.avif"
+                alt="Силуэт человека с поднятыми руками на ярком фоне."
                 class="image-box__image satisfaction"
               />
               <span class="image-box__text">&lt;satisfaction&gt;</span>
@@ -254,8 +259,9 @@
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="image-box">
               <img
-                src="./images/confidence.jpg"
-                alt=""
+                src="./images/main-content-images/confidence.jpg"
+                srcset="./images/main-content-images/confidence.avif"
+                alt="Мужчина за письменным столом, использующий ноутбук и настольный компьютер, занятый работой или учебой."
                 class="image-box__image confidence"
               />
               <span class="image-box__text">&lt;confidence&gt;</span>
@@ -325,8 +331,9 @@
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="image-box">
               <img
-                src="./images/pride.jpg"
-                alt=""
+                src="./images/main-content-images/pride.jpg"
+                srcset="./images/main-content-images/pride.avif"
+                alt="Мужчина перепрыгивает через большой камень на открытом воздухе."
                 class="image-box__image pride"
               />
               <span class="image-box__text">PRIDE</span>
@@ -398,8 +405,9 @@
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="image-box">
               <img
-                src="./images/confusion.jpg"
-                alt=""
+                src="./images/main-content-images/confusion.jpg"
+                srcset="./images/main-content-images/confusion.avif"
+                alt="Мужчина в костюме и галстуке держится за голову, выглядя напряженным или погруженным в глубокие раздумья."
                 class="image-box__image confusion"
               />
               <span class="image-box__text">&lt;confusion&gt;</span>
@@ -468,8 +476,9 @@
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="image-box">
               <img
-                src="./images/easement.jpg"
-                alt=""
+                src="./images/main-content-images/easement.jpg"
+                srcset="./images/main-content-images/easement.avif"
+                alt="Мужчина в костюме поднимает руки перед ноутбуком, делая вид, что он увлечен или удивлен тем, что видит на экране"
                 class="image-box__image easement"
               />
               <span class="image-box__text">&lt;easement&gt;</span>
@@ -539,8 +548,9 @@
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="image-box">
               <img
-                src="./images/ignorance.jpg"
-                alt=""
+                src="./images/main-content-images/ignorance.jpg"
+                srcset="./images/main-content-images/ignorance.avif"
+                alt="Мужчина, одетый в костюм, с завязанными глазами, поднимает лампочки, олицетворяя идеи и вдохновение в корпоративной среде."
                 class="image-box__image ignorance"
               />
               <span class="image-box__text">&lt;ignorance&gt;</span>
@@ -612,7 +622,7 @@
         aria-controls="dialog-save"
       >
         <svg viewBox="0 0 21 21" width="21" height="21" class="button-img">
-          <use href="./images/floppy.svg#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -620,7 +630,7 @@
       <dialog id="dialog-save" class="dialog-save">
         <div class="dialog-save__warn">
           <svg viewBox="0 0 39 39" class="dialog-save__img">
-            <use href="./images/floppy.svg#floppy"></use>
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <p class="dialog-save__text">
             Вставьте<br />
