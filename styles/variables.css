@@ -36,4 +36,5 @@
 
   --contour-color: rgb(0 0 0);
   --sparks-color: rgb(255 0 0);
+  --like-icon-animation: fill .3s linear;
 }
